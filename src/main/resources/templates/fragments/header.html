@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<div th:fragment="header" class="header">
+
+    <a th:href="@{/}">
+        <img class="logo" th:src="@{/images/logo.svg}"/>
+    </a>
+    <form class="form">
+        <a class="button">login</a>
+        <a class="button">register</a>
+    </form>
+
+</div>
+
+</html>
