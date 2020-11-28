@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 
+<div th:fragment="table-content" class="content">
+
+    <div class="market-field" th:each="market : ${marketList}">
+        <div th:text="${market.cryptoCurrencyName}"></div>
+    </div>
+
+</div>
 
 <div th:fragment="login-form-content" class="content">
 
